@@ -1,0 +1,141 @@
+*{
+    margin:0;
+
+}
+
+.side-bar{
+    width:220px;
+    min-height:100vh;
+    background-color:#121212;
+    color:white;
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-top,
+.sidebar-center,
+.sidebar-bottom{
+    width:80%;
+    padding:10px 0px;
+    margin-bottom: 10px;
+    border-bottom:  1px solid rgba(255, 255, 255, 0.429);
+    display: flex;
+    align-items: center;
+}
+
+
+
+.sidebar-bottom{
+    justify-content: center;
+    border:none;
+}
+
+.logo{
+    font-size:24px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-left:10px;
+
+}
+
+.brand{
+    cursor: pointer;
+    font-weight:600;
+}
+
+
+.list{
+    padding:0;
+    list-style: none;
+    width:100%;
+}
+.list-items{
+    margin-bottom: 10px;
+    font-size:14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:10px;
+    
+}
+
+.list-item-icon{
+    width:30px;
+    font-size:20px;
+  
+}
+
+.list-items:hover,
+.list-items.active{
+    background-color:rgba(157, 17, 17, 0.808);
+    color:white;
+
+}
+
+.list-items.active:hover{
+    background: #aeadad;
+}
+
+.dark{
+    color:#6f6e6e;
+    font-size: 25px;
+    border:1px solid white;
+    padding:8px;
+}
+
+
+.color-box{
+    margin-right:10px;
+    width:30px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.light{
+    font-size: 30px;
+    border:1px solid white;
+    padding:8px;
+}
+
+
+@media only screen and (max-width:768px){
+    .side-bar{
+        width:50px;
+    }
+    .brand,.list-item-text{
+        display: none;
+    }
+    .sidebar-bottom{
+        display: none;
+    }
+    .color-box{
+        margin-bottom: 10px;
+        font-size:20px;
+        padding:4px;
+        margin-right:0;
+    }
+
+  
+}
+
+
+.side-bar.light{
+    background-color: rgba(220, 210, 210, 0.422);
+    color:black;
+    
+}
+
+.list-items.active.light{
+    background-color: #25202082;
+    color: white;
+}
+
+
+.sidebar-bottom-logo{
+    margin-right: 10px;
+    
+}
