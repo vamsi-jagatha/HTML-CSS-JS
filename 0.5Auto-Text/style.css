@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    
+   
+}
+
+
+p{
+    font-size:45px;
+    width:110vh;
+}
+
+p .greeting{   
+    color:#121212;
+}
+
+.subject{
+    color:#121212;
+    font-size:75px;
+    font-weight:600;
+}
+
+.typed-text{
+    color:#b00020;
+    font-size:65px;
+    line-height: 5rem;
+    font-weight:600;
+    
+}
+
+.cursor{
+    background-color:#b00020;
+
+}
