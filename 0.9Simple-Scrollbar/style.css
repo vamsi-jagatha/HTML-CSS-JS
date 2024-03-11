@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #000;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  
+}
+
+.container{
+    background: linear-gradient(145deg,teal,white);
+    border-radius:5px;
+
+}
+.scroll{
+    height:500px;
+    width:400px;
+    overflow: hidden;
+    overflow-y: scroll;
+   padding: 3rem;
+    text-align: justify;
+}
+
+
+.main-heading{
+    font-size:25px;
+    text-align: center;
+    margin:1rem;
+    text-decoration: underline;
+    
+}
