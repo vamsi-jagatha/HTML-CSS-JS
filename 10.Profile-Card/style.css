@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000;
+    min-height:100vh;
+    font-family: "Poppins",sans-serif;
+    
+}
+
+#container{
+    position: relative;
+    background-color: #222;
+    height:400px;
+    width:300px;
+    border-radius:25px;
+    box-shadow: 5px 5px 20px #fff;
+}
+
+#container .card{
+     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:12vh;
+    width:100%;
+    background-image: url("images/images/Simple\ Work\ LinkedIn\ Banner\ in\ Beige\ Black\ Photocentric\ Style.png");
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 2px solid white;
+    padding-top: 2rem;
+    
+}
+
+
+
+.img-profile{
+    
+    height:6rem;
+    border-radius:50%;
+    border:3px solid white;
+}
+.name{
+    color:white;
+    font-weight:600;
+    margin-top:2rem;
+}
+
+.role{
+    color:white;
+    
+}
+
+
+.button-container{
+    margin-top:3rem;
+    
+}
+
+button{
+    height: 2rem;
+    width:5rem;
+    margin: 0rem 0.5rem;
+    border-radius:1rem;
+    border-width: 0rem;
+
+}
+
+button:hover{
+    background-color: #000;
+    color:#fff;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+
+.icon-share{
+    transform: rotate(-30deg);
+    margin-left:0.2rem;
+}
+
+.links{
+    margin-top:2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.icons1{
+    font-size:25px;
+    background-color:#000 ;
+    border-radius:50%;
+    padding:0.5rem 0.5rem;
+    color:white;
+    margin:0.5rem;
+
+}
+
+.icons2{
+    font-size:25px;
+    background-color: rgb(30, 2, 158);
+    border-radius:50%;
+    padding:0.5rem 0.5rem;
+    color:white;
+    margin:0.5rem;
+
+}
+
+.icons3{
+    font-size:20px;
+    background-color:transparent;
+    border: 2px solid #fff;
+    border-radius:50%;
+    padding:0.5rem 0.5rem;
+    color:white;
+    margin:0.5rem;
+
+}
+
+.icons4{
+    font-size:25px;
+    background-color: rgb(255, 0, 132);
+    border-radius:50%;
+    padding:0.5rem 0.5rem;
+    color:#fff;
+    margin:0.5rem;
+
+}
+
+
+:is(.icons1,.icons2,.icons3,.icons4):hover {
+    transform: scale(1.2) translate(0px, -10px) ;
+    transition:0.8s;
+}
+
