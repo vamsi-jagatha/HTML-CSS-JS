@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px;
+    perspective: 800px;
 }
 
 .container{
@@ -28,7 +28,7 @@ body{
 
 .container:hover{
     transform: rotateY(180deg);
-    
+    cursor:pointer;
 }
 
 .container .card{
