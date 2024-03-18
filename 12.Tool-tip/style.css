@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color:rgb(4, 4, 4);
+}
+
+.button-container label{
+    position:relative;
+    background: #fff;
+    height:50px;
+    width:150px;
+    text-align: center;
+    line-height:50px;
+    font-size:20px;
+    font-weight:600;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+    color:rgb(130, 73, 98);
+    box-shadow:  0 0 10px #efebeb;
+    transition: all 0.3s ease;
+    
+}
+
+.button-container label::before{
+    content:"Cancel";
+    position:absolute;
+    height:;
+    width:100%;
+    left:0;
+    right:0;
+    background:#fff;
+    opacity: 0;
+    pointer-events: none;
+    letter-spacing: 1px;
+    
+}
+
+
+#check{
+    display: none;
+}
+
+#check:checked ~label::before{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.icons{
+    position: absolute;
+    top:35%;
+    left:50%;
+    transform: translateX(-50%);
+    background: #fff;
+    height:50px;
+    width:250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:20px;
+    border-radius:25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 0.3s;
+    
+}
+
+#check:checked~ .icons{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.icons a{
+    color:rgb(124, 69, 94);
+    
+}
+
+.icons::before{
+    content: '';
+    position: absolute;
+    height:18px;
+    width:18px;
+    background-color:#fff;
+    transform: rotate(45deg);
+    bottom:-9px;
+}
+
+.icons a:hover{
+    transform: translateY(-10px);
+    transition: 0.6s;
+}
