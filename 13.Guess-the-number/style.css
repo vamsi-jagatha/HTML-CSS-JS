@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+}
+
+.background {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: rgb(164, 242, 225);
+    height: 600px;
+    width: 600px;
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 15px;
+}
+
+.image-container-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.img-lg {
+    height: 250px;
+
+}
+
+.img-sm {
+    height: 200px;
+    display: none;
+}
+
+.card-container {
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.heading {
+    color: beige;
+    font-size: 50px;
+}
+
+span {
+    font-size: 40px;
+    color: teal;
+}
+
+.second-heado {
+    color: rgb(164, 242, 225);
+    text-align: center;
+    margin: 8px;
+}
+
+.input-element {
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: white;
+}
+
+.button {
+    background-color: teal;
+    color: white;
+    height: 35px;
+    width: 110px;
+    border-radius: 20px;
+    outline: none;
+    border: 0px solid white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.result-container {
+    height: 20px;
+    width: 80%;
+
+}
+
+.result {
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 1s;
+    font-size: 16px;
+
+}
+
+@media (max-width:576px) {
+
+    .image-container-lg {
+        display: none;
+    }
+
+    .card-container {
+        border-radius: 15px;
+    }
+
+    .heading {
+        font-size: 25px;
+
+    }
+
+    span {
+        font-size: 25px;
+        color: teal;
+    }
+
+    .button {
+        margin-top: 20px;
+
+    }
+
+    .img-sm {
+        display: block;
+        border-radius: 50%;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+}

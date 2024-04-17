@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="main-container">
+            <div class="image-container-lg">
+                <img class="img-lg" src="https://niceillustrations.com/wp-content/uploads/2021/05/Thinking-color-800px-768x768.png" alt="">
+            </div>
+            <div class="card-container">
+                <div class="image-container-sm">
+                    <img class="img-sm" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.s1rVXs-f2XtDzlEUwPOgpAHaHa%26pid%3DApi&f=1&ipt=d4630c960694db6377f08b2f9f8410a66603bc4a6a9bd028fe4e192cbdebdaf9&ipo=images" alt="">
+                </div>
+                <div>
+                    <h1 class="heading">Guess the <span>Number?</span> </h1>
+                    <h3 class="second-heado">Try Your luck...!</h3>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="" id="userInput" class="input-element" placeholder="Enter a Number" onclick="input()">
+                </div>
+                <button class="button" onclick="checkGuess()">Check</button>
+                <div class="result-container">
+                    <h2 class="result" id="resultId"></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
