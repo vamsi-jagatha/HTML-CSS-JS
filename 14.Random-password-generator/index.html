@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rand-Pass-Gen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5ab3b4127.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="container">
+            <img class="image" src="images/lock.png" alt="">
+            <h1 class="heading">Random Password Generator</h1>
+        <div class="input-container">
+            <input type="text" placeholder="Password" class="user-input" id="password">
+            <i class="fa-solid fa-copy" onclick="copyPassword()"></i>
+        </div>
+
+        <div class="button-container">
+
+            <button type="submit" class="button" onclick="createRandomPassword()">Generate<i class="fa-solid fa-repeat"></i></button>
+            <button type="submit" class="button" onclick="resetPassword()">Reset<i class="fa-solid fa-trash-can-arrow-up"></i></button>
+            
+        </div>
+    </div>
+    </div>
+
+
+
+    <script>
+        const inputElement=document.getElementById('password');
+        const lengthOfPassword=12;
+        const upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowerCase="abcdefghijklmnopqrstuvwxyz";
+        const number="0123456789";
+        const symbol="@#$%&?|\/"
+
+        const allChars=upperCase+lowerCase+number+symbol;
+
+    function createRandomPassword(){
+        let password="";
+        password+=upperCase[Math.floor(Math.random()*upperCase.length)];
+        password+=lowerCase[Math.floor(Math.random()*lowerCase.length)];
+        password+=number[Math.floor(Math.random()*number.length)];
+        password+=symbol[Math.floor(Math.random()*symbol.length)];
+            
+            
+        while (lengthOfPassword>password.length){
+            password+=allChars[Math.floor(Math.random()*allChars.length)];
+        }
+    inputElement.value=password;
+    }
+
+        
+
+    function copyPassword(){
+        inputElement.select();
+        document.execCommand('copy');
+    }
+
+    function resetPassword(){
+        inputElement.value="";
+
+    }
+     
+    </script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
