@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-color-generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5ab3b4127.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background-container" id="backgroundContainer">
+
+        <img src="https://ik.imagekit.io/twcoyrvbw/cute-siberian-husky-peeking-cartoon-illustration-vector-removebg-preview.png?updatedAt=1713612229508" alt="" class="image">
+        <div class="container">
+            <h1 class="heading">Random Color Generator</h1>
+            <div class="content">
+                <h3 class="content">HexCode:</h3>
+                <p class="para" id="hexCode"></p>
+
+            </div>
+            <div class="range-container">
+                <label for="range">opacity:</label>
+                <input type="range" min="0.5" max="1" value="1" step="0.01" name="range" id="range">
+                <span id="opacityValue">1</span>
+            </div>
+            <button class="button" id="button">Generate</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
