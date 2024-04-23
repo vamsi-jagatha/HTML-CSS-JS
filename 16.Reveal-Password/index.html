@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal-Password</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5ab3b4127.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="input-container">
+        <input type="password" class="input-element" name="" id="password" placeholder="Enter your password" >
+        <i class="fa-solid fa-eye-slash" id="eye"></i>
+    </div>
+    
+    <script>
+        let inputElement=document.getElementById('password');
+        let eyeButton=document.getElementById('eye');
+       
+        eyeButton.onclick=function(){
+        if (inputElement.type==="password"){
+            inputElement.type="email";
+            inputElement.classList.add("email-element");
+            eyeButton.classList.add('fa-solid','fa-eye');
+        if(inputElement.value===""){
+            alert('Enter a valid password');
+            inputElement.type="password";
+            eyeButton.classList.remove('fa-solid','fa-eye');
+            eyeButton.classList.add('fa-solid','fa-eye-slash');
+            }
+        }
+    
+        else{
+            inputElement.type="password";
+            eyeButton.classList.remove('fa-solid','fa-eye');
+            eyeButton.classList.add('fa-solid','fa-eye-slash');
+        }
+            
+        }
+        
+        
+    </script>
+</body>
+</html>
