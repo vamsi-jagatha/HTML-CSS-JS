@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.background{
+    background-color: rgb(140, 39, 176);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.stop-button{
+    height:50px;
+    width:120px;
+    font-weight:600;
+    font-size:18px;
+    border-radius: 7px;
+    outline: none;
+    border-width: 0;
+    margin:20px;
+    margin-bottom:80px;
+}
+.ready-button{
+    height:50px;
+    width:120px;
+    font-weight:600;
+    font-size:18px;
+    border-radius: 7px;
+    outline: none;
+    border-width: 0;
+    margin:20px;
+    margin-bottom:80px;
+}
+.go-button{
+    height:50px;
+    width:120px;
+    font-weight:600;
+    font-size:18px;
+    border-radius: 7px;
+    outline: none;
+    border-width: 0;
+    margin:20px;
+}
+
+.lights-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:600px;
+    padding:50px;
+    background-color:black;
+    border-radius: 25px;
+    margin-left:100px;
+}
+
+.stop-light{
+    background-color: rgb(53, 48, 48);
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    margin-bottom:60px;
+}
+.ready-light{
+
+    background-color: rgb(53, 48, 48);
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    margin-bottom:60px;
+}
+.go-light{
+
+    background-color: rgb(53, 48, 48);
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width:576px){
+
+    .background{
+        height:100vh;
+        
+    }
+    .lights-container{
+        padding:40px;
+        margin-left:20px;
+        height:100%;
+        width:100%;
+        
+    }
+
+
+    .stop-button{
+        height:40px;
+        width:80px;
+    }
+    .ready-button{
+        height:40px;
+        width:80px;
+    }
+    .go-button{
+        height:40px;
+        width:80px;
+    }
+}
