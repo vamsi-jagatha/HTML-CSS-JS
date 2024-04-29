@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="background ">
+        <div class="tip-calculator-container ">
+            <!-- <img class="tip-calculator-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/tip-calculator-img.png" /> -->
+            <h1 class="tip-calculator-heading ">Tip Calculator</h1>
+                    <div class="">
+                        <p class="input-label ">BILL AMOUNT <span>*</span></p>
+                        <input type="text" class="user-input" id="billAmount" />
+                    </div>
+                    <div class="">
+                        <p class="input-label ">PERCENTAGE TIP <span>*</span></p>
+                        <input type="text" class="user-input" id="percentageTip" />
+                    </div>
+                    <div class="">
+                        <p class="input-label ">TIP AMOUNT</p>
+                        <input type="text" class="user-input" id="tipAmount" />
+                    </div>
+                    <div class="">
+                        <p class="input-label ">TOTAL</p>
+                        <input type="text" class="user-input" id="totalAmount" />
+                    </div>
+                    <div class="button-container">
+                        <button class=" calculate-tip-button" id="calculateButton" onclick="calculateTip()">CALCULATE</button>
+                        <p class="error-message" id="errorMessage"></p>
+                    </div>
+                </div>
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

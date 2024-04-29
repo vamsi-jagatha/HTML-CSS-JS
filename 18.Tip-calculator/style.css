@@ -1,0 +1,91 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.background{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: linear-gradient(145deg,#0abd60,#000000);
+}
+.tip-calculator-container {
+    background-color: #0b8a49;
+    border:1px solid #000;
+    padding:32px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.tip-calculator-image {
+    width: 100%;
+}
+
+.tip-calculator-heading {
+    color: #01321a;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin:20px;
+    
+}
+
+.input-label {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: bold;
+    margin:5px;
+    margin-left:15px;
+}
+
+.user-input {
+    height: 50px;
+    width:90%;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #7df8b7;
+    border-color: #0f6c3c;
+    outline: none;
+    outline-color: #0f6c3c;
+    border-radius: 4px;
+    padding-left: 12px;
+    margin:15px;
+    box-shadow: 2px 2px 2px 2px #000000;
+}
+
+.calculate-tip-button {
+    background-color:#13d470;
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-radius: 10px;
+    height:50px;
+    width:140px;
+    margin:20px;
+
+}
+
+.error-message {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+span{
+    color:red;
+}
