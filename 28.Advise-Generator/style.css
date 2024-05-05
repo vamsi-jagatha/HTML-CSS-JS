@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.background {
+    background-image: repeating-linear-gradient(0deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px, transparent 1px, transparent 21px), repeating-linear-gradient(90deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px, transparent 1px, transparent 21px), linear-gradient(90deg, hsl(87, 0%, 9%), hsl(87, 0%, 9%));
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.card-container {
+    background-color: #141414;
+    width: 1500%;
+    /* Set your desired fixed width */
+    margin: auto;
+    /* Center horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+
+.heading {
+    color: lightgreen;
+}
+
+.heading-sm {
+    display: none;
+}
+
+.line {
+    color: white;
+    background: white;
+    height: 1px;
+    margin: 0px 60px;
+
+
+}
+
+.custom-button {
+    width: 100px;
+    margin-right: 10px;
+    border-width: 0;
+    border-radius: 4px;
+    height: 35px;
+    color: white;
+    background-color: green;
+    outline:none !important;
+}
+
+.advise {
+    color: white;
+    line-height: 24px;
+    font-size: 20px;
+    height: 100px;
+
+}
+
+
+
+@media (max-width:576px) {
+    .card-container {
+        width: 1000%;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .advise {
+        padding: 0;
+    }
+
+    .heading-sm {
+        display: block;
+        color: lightgreen;
+    }
+
+
+
+}
