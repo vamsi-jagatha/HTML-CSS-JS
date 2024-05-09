@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+     font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --primary-color:#121212;
+    --secondary-color:#ffffff;
+}
+
+.dark-theme{
+    --primary-color:#ffffff;
+    --secondary-color:#121212;
+    transition: 1s;
+}
+
+@media (max-width:576px){
+    .background{
+        /* background-color:black; */
+        height:100vh;
+        overflow: hidden;
+        background-color: var(--primary-color);
+        padding-top:6vh;
+        transition: 1s;
+    }
+
+    .icon-container{
+        padding:10px;
+        font-weight:600;
+        font-size:24px;
+    }
+
+    .fa-grip-lines{
+        color:var(--primary-color);
+        cursor: pointer;
+        
+    }
+
+    nav{
+        position: fixed;
+        text-align: center;
+        background-color: var(--secondary-color);
+        border-radius: 0px 0px 10px 20px;
+        transform: translateY(0%);
+        width:100%;
+        transition: 1s;
+        z-index:9999;
+    }
+    
+    nav li{
+        list-style-type: none;
+        padding:10px 0px;
+    }
+    
+    nav li a{
+        text-decoration: none;
+        font-weight:700;
+        color:var(--primary-color);
+    }
+
+    
+    .hide-slider{
+        transform: translateY(-80%);
+    }
+    
+    
+    .background-change-icon{
+        text-align: right;
+        padding:1rem;
+        padding-top:1rem;
+    }
+    
+    .fa-moon{
+        font-weight:600;
+        font-size:29px; 
+        z-index: 0;
+        cursor: pointer;
+        color:var(--secondary-color)
+    }
+    .fa-sun{
+        font-weight:600;
+        font-size:29px; 
+        z-index: 0;
+        cursor: pointer;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
