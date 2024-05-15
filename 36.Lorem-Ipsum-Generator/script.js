@@ -2,9 +2,6 @@ let result=document.getElementById('result');
 let noOfWords=document.getElementById('words');
 let generateBtn=document.getElementById('generate');
 
-function getRandomText(){
-    let rand=Math.floor(Math.random()*100);
-}
 
 generateBtn.addEventListener('click',function(){
     let valueOfwords=noOfWords.value;
