@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.heading{
+    font-size: clamp(1rem, 10vw ,2rem);
+    text-align: center;
+}
+
+.container{
+    max-width:500px;
+    text-align: center;
+
+}
+
+input{
+    height:30px;
+    width:7%;
+    margin-top:0.5rem;
+    padding: 0.5rem;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-container{
+    text-align: center;
+}
+
+.result{
+    margin:1rem 0rem;
+    text-align: left;
+}
+
+.generate{
+    margin:1rem;
+    padding:0.3rem 1rem;
+}
+
+button{
+    border-radius: 0.3rem;
+    font-weight:600;
+
+}
