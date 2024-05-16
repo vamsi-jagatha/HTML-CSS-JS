@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.main-background{
+    background-color:rgb(226, 114, 114);
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    position: relative;
+    width:50%;
+    height:min-content;
+    padding:1rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.main-heading{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+
+.heading{
+    padding-bottom: 1rem;
+}
+
+textarea{
+    height: 50%;
+    width: 100%;
+    padding:1rem;
+    resize: none;
+    border-radius: 1rem;
+}
+
+.para{
+    padding:0.5rem 0rem;
+    
+    font-weight: 600;
+    font-size:clamp(0.4rem,3vw,1.2rem);
+}
