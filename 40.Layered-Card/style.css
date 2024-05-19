@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.main-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-background{
+    position: relative;
+    background-color: #e9e9e9;
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card-1{
+    position: relative;
+    top:-20%;
+    left:0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+    height:30%;
+    max-width: 400px;
+    width:100%;
+    padding:1rem ;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+}
+
+.card-2{
+    position: absolute;
+    top:35%;
+    text-align: center;
+    background-color:#fff;
+    height:50%;
+    max-width:300px;
+    width:100%;
+    border-radius: 10px;
+    padding:2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.greet{
+    text-align: center;
+    font-weight: 500;
+}
+
+.para-des{
+    font-size:15px;
+}
+
+.name{
+    margin-bottom: 0.5rem;
+}
+
+.profile-image{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+}
+
+.image-container{
+    background-color:rgb(205, 205, 205);
+    display:inline-flex;
+    border-radius: 50%;
+    margin:1rem 0rem 0.5rem 0rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+
+
+.active-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width:max-content;
+    margin:auto;
+    padding:0.1rem .9rem;
+    border-radius: 20px;
+    
+}
+
+.status-dot{
+    height:8px;
+    width: 8px;
+    background-color:tomato;
+    border-radius: 50%;
+    margin:0px 6px 0px 0px;
+
+}
+
+.status{
+    font-size: 14px;
+    font-style: 600;
+    padding:0rem 0rem .1rem 0rem;
+}
+
+
+.button{
+    background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+    padding:0.9rem 1rem;
+    border-radius: 6px;
+    border: none;
+    margin:2rem 0rem 1rem 0rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
