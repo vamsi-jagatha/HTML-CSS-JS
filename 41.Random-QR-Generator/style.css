@@ -1,0 +1,74 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(152deg, rgba(93, 93, 93, 0.02) 0%, rgba(93, 93, 93, 0.02) 3%,rgba(71, 71, 71, 0.02) 3%, rgba(71, 71, 71, 0.02) 9%,rgba(11, 11, 11, 0.02) 9%, rgba(11, 11, 11, 0.02) 52%,rgba(198, 198, 198, 0.02) 52%, rgba(198, 198, 198, 0.02) 85%,rgba(231, 231, 231, 0.02) 85%, rgba(231, 231, 231, 0.02) 100%),linear-gradient(50deg, rgba(25, 25, 25, 0.02) 0%, rgba(25, 25, 25, 0.02) 28%,rgba(53, 53, 53, 0.02) 28%, rgba(53, 53, 53, 0.02) 29%,rgba(146, 146, 146, 0.02) 29%, rgba(146, 146, 146, 0.02) 32%,rgba(172, 172, 172, 0.02) 32%, rgba(172, 172, 172, 0.02) 80%,rgba(178, 178, 178, 0.02) 80%, rgba(178, 178, 178, 0.02) 100%),linear-gradient(108deg, rgba(235, 235, 235, 0.02) 0%, rgba(235, 235, 235, 0.02) 1%,rgba(126, 126, 126, 0.02) 1%, rgba(126, 126, 126, 0.02) 69%,rgba(60, 60, 60, 0.02) 69%, rgba(60, 60, 60, 0.02) 75%,rgba(162, 162, 162, 0.02) 75%, rgba(162, 162, 162, 0.02) 96%,rgba(186, 186, 186, 0.02) 96%, rgba(186, 186, 186, 0.02) 100%),linear-gradient(58deg, rgba(184, 184, 184, 0.02) 0%, rgba(184, 184, 184, 0.02) 6%,rgba(73, 73, 73, 0.02) 6%, rgba(73, 73, 73, 0.02) 11%,rgba(9, 9, 9, 0.02) 11%, rgba(9, 9, 9, 0.02) 72%,rgba(197, 197, 197, 0.02) 72%, rgba(197, 197, 197, 0.02) 82%,rgba(225, 225, 225, 0.02) 82%, rgba(225, 225, 225, 0.02) 100%),linear-gradient(103deg, rgba(24, 24, 24, 0.02) 0%, rgba(24, 24, 24, 0.02) 5%,rgba(240, 240, 240, 0.02) 5%, rgba(240, 240, 240, 0.02) 78%,rgba(12, 12, 12, 0.02) 78%, rgba(12, 12, 12, 0.02) 83%,rgba(52, 52, 52, 0.02) 83%, rgba(52, 52, 52, 0.02) 93%,rgba(122, 122, 122, 0.02) 93%, rgba(122, 122, 122, 0.02) 100%),linear-gradient(90deg, rgb(58, 58, 58),rgb(73, 73, 73));
+}
+
+.container{
+    background-color: bisque;
+    height:370px;
+    width:400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.QR-heading{
+    text-align: center;
+    margin:0.4rem;
+}
+
+.QR-container{
+    height:150px;
+    width:150px;
+    display: flex;
+}
+
+
+.image{
+    height:150px;
+    width:150px;
+}
+label{
+    height:100%;
+    display: flex;
+    align-items: end;
+    padding:20px;
+}
+
+
+.user-input{
+    height:40px;
+    padding: 0.5rem;
+    width:70%;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-weight: 600;
+
+}
+
+::placeholder{
+    font-weight:600;
+
+}
+
+.button{
+    height:40px;
+    width: 130px;
+    font-size: 1rem;
+    border-radius:10px;
+    margin-bottom: 1rem;
+}
