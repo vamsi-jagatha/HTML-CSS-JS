@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5ab3b4127.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="background">
+        <section class="container">
+            <div class="buttons-container">
+                <button id="workBtn" class="buttons">work</button>
+                <button id="breakBtn" class="buttons">break</button>
+            </div>
+            <h3 class="heading">Set Your Timer</h3>
+            <div class="circle">
+                <div class="input-container1">
+                    <i class="fa-solid fa-angle-up"></i><br>
+                    <input type="number" placeholder="00" name="" id="inputMin"><br>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <h1 class="colon">:</h1>
+                <div class="input-container2">
+                    <i class="fa-solid fa-angle-up"></i><br>
+                    <input type="number" placeholder="00" name="" id="inputSec"><br>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="">
+                <button class="button" id="startBtn">START</button>
+                <i class="fa-solid fa-arrow-rotate-right" id="reset"></i>
+            </div>
+            <p class="link">Pomodoro Technique<a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"><i class="fa-solid fa-up-right-from-square"></i></a></p>
+            <audio id="alarmSound" src="audio/ping-82822.mp3" preload="auto"></audio>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
