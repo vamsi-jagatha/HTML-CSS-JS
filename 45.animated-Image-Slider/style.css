@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.background-container{
+    background-color: #000;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+
+.sliders{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    width:70%;
+    height:450px;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+h1{
+    margin:3rem 0rem;
+    color:white;
+    font-size: 3rem;
+}
+
+
+.sliders img{
+    width: 10%;
+    height:90%;
+    border-radius: 20px;
+    object-fit: cover;
+    border:1px solid white;
+    transition: all ease-in-out 0.6s;
+    
+}
+
+img:hover{
+    width: 25%;
+}
