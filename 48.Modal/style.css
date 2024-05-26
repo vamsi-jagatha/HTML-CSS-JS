@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: black;
+}
+
+.background{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    position: absolute;
+    height:250px;
+    width:450px;
+    z-index:9999;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    animation: slideuptodown  0.2s linear ;
+    
+}
+
+.hide-container{
+    display: none;
+
+}
+
+
+@keyframes slideuptodown{
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{   
+        transform:translateY(0px);
+    }
+}
+#launchBtn{
+    margin:1rem;
+    background: rgb(0, 85, 255);
+    color: white;
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+    outline:none;
+    border-radius: 6px;
+    border: none;
+    transition:0.3s;
+}
+
+#launchBtn:hover{
+    transform: scale(1.1);
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.5rem 1rem;
+}
+.title{
+    font-weight:600;
+    font-size:1.2rem;
+}
+
+.description-container{
+    margin: 1.2rem;
+}
+
+.description{
+    font-size:14px;
+    line-height: 1.2rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: end;
+}
+
+#saveBtn{
+   margin:0.5rem 0.5rem;
+   padding: 0.5rem 1rem ;
+   background:rgb(0, 85, 255);
+   color:white;
+   font-weight: 500;
+   font-size:1rem;
+   border-radius: 6px;
+   border:none;
+}
+
+#saveBtn:hover{
+    background:rgb(0, 125, 255);
+
+}
+
+#closeBtn{
+    margin:0.5rem 0.5rem;
+    padding: 0.5rem 1rem ;
+    background:rgb(137, 137, 137);
+    color:white;
+    font-weight: 500;
+    font-size:1rem;
+    border-radius: 6px;
+    border:none;
+}
+
+#closeBtn:hover{
+    background:rgb(160, 160, 137);
+    
+}
+
+#Btn:hover{
+    transform: scale(1.2);
+}
+
+img{
+    height:200px;
+}
