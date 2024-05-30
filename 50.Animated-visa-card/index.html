@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic card fill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="card-container">
+            <div class="card front-face">
+
+                <div class="logo-chip-container">
+                    <div class="chip-container">
+                        <img src="bg-image/chip - Copy.png" alt="" class="chip" >
+                    </div>
+                    <div class="logo-container">
+                        <img src="bg-image/visa-logo.png" alt="" class="logo">
+                    </div>
+                </div>
+                
+                <div class="card-number-container">
+                    <textarea name="" id="cardNumber" cols="40">#### #### #### ####</textarea>
+                </div>
+                
+                <div class="card-holder-date-container">
+                <div class="card-holder-container">
+                    <h5 >Card Holder</h5>
+                    <h4 id="cardHolder">FULL NAME</h4>
+                </div>
+                <div class="card-expiry-date-container">
+                    <h5>Expires</h5>
+                    <h4 id="expiryDate">MM/YY</h4>
+                </div>
+            </div>
+        </div>
+
+            <div class="card back-face">
+                <div class="black-line"></div>
+                <h4 class="cvv">CVV</h4>
+                <div class="text-area-cvv">
+                    <textarea class="text-area-back" name="" id="CVV" cols="42">***</textarea>
+                </div>
+                <div class="back-logo-container">
+                    <img src="bg-image/visa-logo.png" alt="" class="logo">
+                </div>
+            </div>
+    </div>
+
+        <form class="details-container" id="detailsForm">
+            <div class="card-number">
+                <div class="input-container ">
+                    <input id="inputCardNumber" placeholder="Enter Card Number" class="input-field" type="text">
+                <label for="input-field" class="input-label">Card Number</label>
+                <span class="input-highlight"></span>
+            </div>              
+            <p class="errorMsg1"></p>
+        </div>
+        <div class="card-holder">
+                <div class="input-container ">
+                    <input id="inputCardHolder" placeholder="Enter Card Holder" class="input-field" type="text">
+                    <label for="input-field" class="input-label">Card Holder</label>
+                    <span class="input-highlight"></span>
+                </div>              
+                <p class="errorMsg2"></p>
+            </div>
+
+            <div class="expiry-container">
+                
+            <div class="expiry-input">
+                <select name="" id="selectMonth" class="month">
+                    <option value="" selected>Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+            </div>
+                
+            <div class="expiry-input">
+                <select name="" id="selectYear" class="month">
+                    <option value="" selected>Year</option>
+                    <option value="22">2022</option>
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                    <option value="29">2029</option>
+                    <option value="30">2030</option>
+                    <option value="31">2031</option>
+                    <option value="32">2032</option>
+                    <option value="33">2033</option>
+                    <option value="34">2034</option>
+                    <option value="35">2035</option>
+                </select>
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+            </div>
+            <div class="expiry-input">
+                <input type="text" class="month" placeholder="CVV" name="" id="inputCVV">
+            </div>
+        </div>
+
+            <div class="buttons-container">
+                <button type="submit" id="submitBtn">submit</button>
+            </div>
+        </form> 
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
