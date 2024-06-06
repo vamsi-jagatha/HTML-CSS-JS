@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.todos-bg-container {
+    background-color: #979797;
+    height: 100vh;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    font-family:sans-serif;
+}
+
+
+.create-task-heading {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.create-task-heading-subpart {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.todo-items-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.todo-items-heading-subpart {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-container {
+    margin: 0;
+    padding: 0;
+}
+    
+.todo-item-container {
+    display:flex;
+    margin-top: 15px;
+}
+
+.todo-user-input {
+    background-color: white;
+    max-width:450px ;
+    min-width:450px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000710;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    font-weight:600;
+    font-size:16px;
+}
+
+.button {
+    color: white;
+    background-color: #cd520f;
+    font-size: 18px;
+    border-width: 0;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height:45px;
+    width:80px;
+    font-weight:600;
+}
+
+.label-container {
+    display:flex;
+    align-items: center;
+    background-color: #ebd9ae;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #920909;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    font-weight: 400;
+    width: 82%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.delete-icon {
+    padding: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
