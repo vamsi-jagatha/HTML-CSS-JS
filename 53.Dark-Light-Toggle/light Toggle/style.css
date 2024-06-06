@@ -1,0 +1,65 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+    background-color: aliceblue;
+    transition: 0.3s linear;
+}
+
+.container{
+    position: relative;
+    height:100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    opacity: 0.5;
+    position: absolute;
+
+}
+
+label{
+    position: relative;
+    background-color: rgb(0, 106, 255);
+    height:30px;
+    width: 71px;
+    border-radius: 20px;
+
+}
+
+
+span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:5px;
+    top:4px;
+    height: 22px;
+    width:22px;
+    background-color: #fff;
+    border-radius:50%;
+    transition:0.3s linear;
+}
+
+
+input:checked+ label span{
+    transform: translateX(40px) rotate(360deg);
+}
+
+.dark{
+    background-color: #000;
+    transition: 0.3s;
+}
+
