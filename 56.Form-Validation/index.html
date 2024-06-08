@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+        <div class="blob-3"></div>
+        <form action="" class="form-container" id="myForm">
+            <h1>Register</h1>
+
+        <div class="full-name">
+            <div class="firstName">
+                <label for="firstName" class="label-name">First Name <span>*</span></label>
+                <input type="text" name="" placeholder="First Name" id="firstName" autocomplete="off" >
+                <p class="error-msg" id="firstNameErrMsg" ></p>
+            </div>
+            <div class="lastName">
+                <label for="lastName" class="label-name">Last Name <span>*</span></label>
+                <input type="text" name="" placeholder="Last Name" id="lastName" autocomplete="off">
+                <p class="error-msg" id="lastNameErrMsg"></p>
+            </div>
+        </div>
+
+        <div class="email-address">
+            <label for="email" class="label-name" >email <span>*</span></label>
+            <input type="email" name="" placeholder="enter your email" id="email" autocomplete="off">
+            <p class="error-msg" id="emailErrMsg"></p>
+        </div>
+
+        <div class="password-container">
+            <label for="password" class="label-name"  >password <span>*</span></label>
+            <input type="password" name="" placeholder="enter password" id="password">
+            <p class="error-msg" id="passwordErrMsg"></p>
+            </div>
+            
+            <div class="date-container">
+                <label for="" class="label-name">DOB <span>*</span></label>
+            <div class="containers-date">
+                <select name="date" id="date">
+                    <option value="1" >1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                    <option value="25">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+            <select name="" id="month" >
+                <option value="January" >January</option>
+                <option value="february">february</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+
+            <select name="" id="year">
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              
+            </select>
+        </div>
+        <p class="error-msg" id="dateErrMsg"></p>
+        </div>
+
+        <div class="gender-container">
+            <div class="flex">
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male" class="gender-label">Male</label>
+            </div>
+            <div class="flex">
+                <input type="radio" name="gender" id="female">
+                <label for="female" class="gender-label">Female</label>
+            </div>
+        </div>
+
+            <div class="terms">
+                <input type="checkbox" name="" id="checkbox" class="mycheckbox">
+                <label for="checkbox" class="label-name"><a href="">agree with Terms & Conditions <span>*</span></a></label>
+            </div>
+            
+            <div class="button-container">
+                <button type="submit" id="submitBtn">Register</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

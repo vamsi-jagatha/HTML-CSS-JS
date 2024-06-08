@@ -1,0 +1,289 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.background{
+    background-color: black;
+    position:relative;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.form-container{
+    min-height: 65vh;
+    max-height: 78vh;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    color :#fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    min-width:400px;
+    max-width: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px;
+    z-index: 9999;
+   
+}
+
+h1{
+    flex-grow: 1;
+    height:35px;
+    width:150px;
+    margin-bottom:20px;
+}
+
+
+.full-name{
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+}
+
+
+#firstName,
+#lastName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:170px;
+    height:35px;
+    padding:0px 10px;
+    font-size:1rem;
+    border-radius: 7px;
+    border: 1px solid #cec7c7;
+  
+}
+
+
+.label-name{
+    font-size:12px;
+    margin-left:2px;
+}
+
+span{
+    color:red;
+}
+.error-msg{
+    font-size:13px;
+    color:white;
+    word-spacing:2px;
+    font-weight:600;
+    color:#e49a98;
+}
+.email-address{
+    margin-top:16px;
+    width:100%;
+}
+#email{
+    width:100%;
+    height:35px;
+    padding:0px 10px;
+    font-size:1rem;
+    border-radius: 7px;
+    border: 1px solid #cec7c7;
+    
+}
+
+#email:hover{
+    border:2px solid #000000;
+}
+#firstName:hover,#lastName:hover{
+    border:2px solid #F41828;
+}
+#password:hover{
+    border:2px solid #F41828;
+    
+}
+
+.password-container{
+    margin-top:16px;
+    width:100%;
+}
+
+#password{
+    width: 100%;
+    margin:0px;
+    height:35px;
+    padding:0px 10px;
+    font-size:1rem;
+    border-radius: 7px;
+    letter-spacing:3px;
+    border: 1px solid #cec7c7;
+
+}
+
+::placeholder{
+    letter-spacing: normal;
+}
+
+.date-container{
+    width:100%;
+    margin: 16px 0;
+}
+
+.containers-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+#date,
+#month,
+#year{
+    height:30px;
+    width:100px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid #cec7c7;
+
+}
+
+#date:hover,#month:hover,#year:hover{
+    border:2px solid #F41828;
+
+}
+
+.gender-container{
+    display: flex;
+    width: 100%;
+    margin: 16px 0px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#female{
+    margin-left:8px;
+}
+
+.gender-label{
+    margin-left:8px;
+}
+
+.terms{
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+a{
+    color:#ffff;
+}
+
+.mycheckbox{
+    height: 15px;
+    width:15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    height:35px;
+    width:200px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F41828;
+    color: #fff;
+    font-weight:600;
+    font-size:18px;
+    margin-top:10px;
+    cursor: pointer;
+}
+
+
+
+.blob-1{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    background:#F41828;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.2;
+    animation: blob1 10s ease-in-out  infinite alternate forwards ;
+}
+
+.blob-2{
+    position: absolute;
+    top:5%;
+    left: 56%;
+    background:#F41828;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.4;
+    animation: blob2 25s ease-in-out  infinite alternate forwards ;
+}
+
+
+@keyframes blob2{
+    0%{
+        transform: translateX(-30%) scale(1);
+    }
+    100%{
+        transform: translateY(220%) ;
+    }
+}
+
+.blob-3{
+    position: absolute;
+    top:0;
+    left: 20%;
+    background:#F41828;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.4;
+    animation: blob3 15s ease-in-out  infinite alternate forwards ;
+}
+
+
+@keyframes blob3{
+    0%{
+        transform: translateX(300%) scale(1);
+
+        }
+        100%{
+        transform: translateY(400%) ;
+     
+    }
+}
+@keyframes blob1{
+    0%{
+        transform: translateX(200%) scale(1);
+    }
+    100%{
+        transform: translateY(-100%) scale(1.1);
+    }
+}
+
+
+@media (max-width:960px){
+
+}
+
+
