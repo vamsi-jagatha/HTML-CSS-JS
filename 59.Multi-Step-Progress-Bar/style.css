@@ -1,0 +1,90 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.list-container{
+    position: relative;
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    height:7vh;
+    width:50vh;
+    z-index: 1;
+    /* background-color: aqua; */
+}
+
+.list{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:1rem;
+}
+
+.list .list-items {
+    background-color: rgb(193, 193, 196);
+    color:aliceblue;
+    height:1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* background-color: red; */
+    position: relative;
+    z-index: 9999;
+}
+
+.list .list-items:nth-child(1){
+    background-color: rgb(75, 75, 255);
+}
+.list .list-items.active{
+    background-color: rgb(75, 75, 255);
+    transition: 1s;
+}
+
+.line{
+    position: absolute;
+    top: 50%;
+    left:10%;
+    width: 0vh;
+    background-color: rgb(13, 0, 255);
+    height: 3px;
+    z-index:2;
+    transition: 1s;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+}
+
+button{
+    margin:1rem;
+    height:2rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    background-color: rgb(5, 97, 256);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(5, 97, 196);
+}
