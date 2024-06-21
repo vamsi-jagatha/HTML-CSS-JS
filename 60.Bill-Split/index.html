@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill-split</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="background">
+        <h1 class="title">Bill Split</h1>
+        <section class="main-container">
+            <div class="box-container">
+                <div class="bill-input-container">
+                    <label for="billInput">Bill</label>
+                    <input type="number" name="bill" id="billInput">
+                </div>
+
+                <div class="selectTip">
+                    <label>Tip Percentage</label>
+                <ul>
+                    <li class="tip">5%</li>
+                    <li class="tip">10%</li>
+                    <li class="tip">15%</li>
+                    <li class="tip">25%</li>
+                    <li class="tip">50%</li>
+                    <li class="tip">75%</li>
+                </ul>
+                <input type="number" id="customTip" placeholder="Custom Tip" >
+                </div>
+
+                <div class="no-of-people">
+                    <label class="main-heading">Number Of People</label>
+                    <input type="number" name="" id="noOfPeople">
+                    <button type="submit" class="button" id="generateBtn">Generate Bill</button>
+                </div>
+            </div>
+
+            <div class="bill-info-container">
+                <div class="bill-items">
+                    <h1 class="heading">Tip amount</h1>
+                    <span id="tipAmount"></span>
+                </div>
+                <div class="bill-items">
+                    <h1 class="heading"> Total</h1>
+                    <span id="totalAmount"></span>
+                </div>
+                <div class="bill-items">
+                    <h1 class="heading">Each Person Bill</h1>
+                    <span id="eachPersonBill"></span>
+                </div>
+
+                <button type="reset" class="reset-btn" id="resetBtn">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

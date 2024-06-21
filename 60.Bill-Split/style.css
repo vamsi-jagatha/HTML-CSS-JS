@@ -1,0 +1,154 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.background{
+    padding:20px;
+}
+
+.title{
+    font-size:2rem;
+    font-weight: 600;
+    color: blue;
+    text-align: center;
+}
+
+
+.bill-input-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:1rem 0rem;
+}
+
+label{
+    font-size:1.5rem;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style-type: none;
+    height:40px;
+    width:120px;
+    background-color: blue;
+    margin:10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 6px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+input{
+    height:40px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+.selectTip input{
+    margin:1rem 0;
+    background-color: rgb(193, 185, 185);
+    color: black;
+}
+
+
+.no-of-people{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: aliceblue;
+    background-color: blue;
+    margin:1rem 0rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.bill-info-container{
+    background-color: grey;
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:1rem;
+}
+
+.bill-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bill-items h1{
+    font-size: 1rem;
+}
+
+.bill-items span{
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+
+
+.reset-btn{
+    height: 40px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+@media screen  and (min-width:768px){
+
+    body{
+        overflow: hidden;
+    }
+
+    .main-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;    
+        height: 100vh;
+        /* width: 100vh; */;
+        position: relative;
+        left:12%;
+      
+    }
+
+    .bill-info-container{
+        position: relative;
+        top:1.6rem;
+        width: 50vh;
+        height: 40vh;
+        margin:1rem;
+    }
+
+    .box-container{
+        width:50vh;
+    }
+
+
+}
