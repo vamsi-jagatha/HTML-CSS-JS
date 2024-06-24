@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.background{
+    height: 100vh;
+    font-family: sans-serif;
+    background-color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    position: absolute;
+    left: 20%;
+}
+
+
+h1{
+    color:tomato;
+    margin-right: 10px;
+}
+p{
+    font-size: 2rem;
+    display: inline-block;
+    border-right:5px solid tomato;
+    white-space: nowrap;
+    width:110%;
+    overflow: hidden;
+    animation: 
+        typer 2s  infinite alternate;
+}
+
+
+
+@keyframes typer {
+    from{
+        width:0;
+    }
+   
+}
+
+@media (min-width:768px){
+    .text-container{
+        left:40%;
+    }
+}
