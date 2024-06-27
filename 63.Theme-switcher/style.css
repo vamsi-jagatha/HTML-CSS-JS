@@ -1,0 +1,213 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+::selection{
+    user-select: none;
+}
+.background{
+    height:100vh;
+    background-color: #000;
+    color: aliceblue;
+   
+}
+
+header .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:8vh;
+    background-color: royalblue;
+    color: aliceblue;
+}
+
+.nav-bar .logo{
+    margin-left :2rem ;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-bar .nav-items{
+    display: flex;
+}
+
+.nav-bar .nav-items .list-items{
+    margin-right: 1.5rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-bar .dropdown{
+    position: relative;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.nav-bar .dropdown button{
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: none;
+    font-weight:600;
+    color: royalblue;
+}
+
+.nav-bar .dropdown .colors-container{
+    position: absolute;
+    left:0;
+    top: 0;
+    height:40px;
+    width:150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dadada;
+    border-radius: 0.5rem;
+    transform: scale(0);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.nav-bar .dropdown .colors-container::before{
+    position: absolute;
+    content: "";
+    height:30px;
+    width: 30px;
+    top:0;
+    transform: rotate(45deg);
+    background-color:#dadada;
+    z-index: -1;
+}
+
+.dropdown .colors-container span{
+    height:25px;
+    width:25px;
+    cursor: pointer;
+    border-radius:50%;
+}
+
+.dropdown .arrow svg{
+    height:25px;
+    animation: pointer .8s ease-in-out infinite alternate;
+}
+
+@keyframes pointer {
+    100%{
+        transform: translate(-10px);
+    }
+}
+
+.color1{
+    background: royalblue;
+}
+.color2{
+    background: #ce069c;
+}
+.color3{
+    background: teal;
+}
+.color4{
+    background: orange;
+}
+
+.active{
+    border: 2px solid rgb(79, 76, 76);
+}
+
+.main-container{
+    height:100vh;
+    display: flex;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    padding:4rem;
+}
+
+.container1 h1{
+    text-align: left;
+    font-size:3rem;
+}
+
+.container1 p{
+    margin:1rem 0;
+}
+
+.container1 h1 span{
+    color:royalblue;  
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+
+.container1 button{
+    height:40px;
+    width:120px;
+    margin:10px 0px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button1{
+    background-color:royalblue;
+    color: white;
+    border: none;
+}
+
+.button2{
+    color:royalblue;
+    border-color: royalblue;
+}
+
+@media (max-width:576px){
+    .nav-bar .nav-items{
+        display: none;
+    }
+
+    .main-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+    .container1{
+        width: 100%;
+        height:50%;
+        padding: 0rem;
+        order: 1;
+    }
+
+    .container2 img{
+        width: 250px;
+        margin-top: 5rem;
+        height: 250px;
+    }
+
+    .container2{
+        width: 100%;
+    }
+
+    .nav-bar .dropdown{
+       width:30%;
+    }
+
+}
