@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dadada;
+}
+
+.newsletter-container{
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 1px #000;
+    background-color: #fff;
+   
+}
+
+
+.newsletter-container input{
+    height:40px;
+    min-width:70%;
+    margin-right:1rem;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid grey;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+}
+
+.submit-btn{
+    height:40px;
+    width:40%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color:#fff;
+    background-color: #000;
+    border: none;
+}
+
+.toast-container{
+    position: absolute;
+    top:0px;
+}
+
+.toast{
+    position: relative;
+    height:50px;
+    max-width:200px;
+    min-width: 400px;
+    background-color: #fff;
+    color:green;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    border-radius: 0.5rem;
+}
+
+.toast.red{
+    color:red;
+}
+
+.toast.red i,
+.toast.green i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.toast.red::after{
+    background-color: red;
+}
+
+.toast::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    background-color: green;
+    animation: progressLine 1.5s linear backwards;
+}
+
+@keyframes progressLine{
+    100%{
+        width:0%;
+    }
+}
