@@ -1,0 +1,137 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F7866;
+}
+
+
+.main-container{
+    position: relative;
+    transform-style:preserve-3d ;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background-size: cover;
+    background-position: top;
+    min-height:300px;
+    min-width: 900px;
+    border-radius: 1rem;
+    color:#61fb02;
+    z-index:9999;
+    border:15px solid rgb(76, 69, 69);
+}
+
+
+.time-container{
+    width:100%;
+}
+
+.date-container{
+    /* position: absolute; */
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around ;
+
+}
+
+.Hrs-Min-Sec{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:35vh;
+    font-size:8rem;
+    overflow: hidden;
+    
+}
+
+.date{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.month-date{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.year{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+p{
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.period{
+    position: absolute;
+    left: 2%;
+    top:30%;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:768px){
+    body{
+        padding:1rem;
+    }
+    .main-container{
+        max-height:200px;
+        margin: 1rem;
+        min-width:400px;
+        min-height:28vh;
+    }
+
+    .Hrs-Min-Sec{
+        font-size:3rem;
+        height:20vh;
+     
+
+    }
+
+    .month-date{
+        font-size:1rem
+    }
+
+    .date{
+        font-size: 1rem;
+    }
+
+    .year{
+        font-size:1rem;
+    }
+
+    p{
+        font-size:0.8rem;
+    }
+    .period{
+        font-size: 1rem;
+        top:10%;
+    }
+
+    .date-container{
+        position:absolute;
+        flex-direction: row;
+        top:65%;
+        left:0;
+        width:100%;
+        justify-content: space-around;
+    }
+
+}
